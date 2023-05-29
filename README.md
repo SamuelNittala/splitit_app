@@ -1,3 +1,3 @@
 # splitit_app
 
-A new Flutter project.
+splitit flutter app
