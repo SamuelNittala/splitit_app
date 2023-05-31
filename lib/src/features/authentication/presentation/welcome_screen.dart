@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:splitit_app/src/common_widgets/welcome_button.dart';
 
-class SignUpScreen extends ConsumerWidget {
-  const SignUpScreen({super.key});
+class WelcomScreen extends ConsumerWidget {
+  const WelcomScreen({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:splitit_app/src/features/authentication/presentation/signup_screen.dart';
 import 'package:splitit_app/src/features/authentication/presentation/welcome_screen.dart';
 
 final helloWorldProvider = Provider<String>((ref) => "hello there");
