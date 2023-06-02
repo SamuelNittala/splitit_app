@@ -12,63 +12,57 @@ class SignUpScreen extends ConsumerWidget {
 
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.grey[900],
+        backgroundColor: Colors.grey[200],
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              Text(
+                'Sign Up',
+                style: TextStyle(
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blueGrey[800]),
+              ),
+              const SizedBox(height: 50),
               InputFieldWidget(
                   labelText: "Phone no",
+                  labelStyle: TextStyle(color: Colors.blueGrey[600]),
+                  inputStyle: TextStyle(color: Colors.blueGrey[800]),
                   onChanged: (value) {
                     signUpState.signupData.phoneNumber = value;
                   }),
-              const SizedBox(
-                height: 50,
-              ),
+              const SizedBox(height: 50),
               InputFieldWidget(
                   labelText: "Username",
+                  labelStyle: TextStyle(color: Colors.blueGrey[600]),
+                  inputStyle: TextStyle(color: Colors.blueGrey[800]),
                   onChanged: (value) {
                     signUpState.signupData.username = value;
                   }),
-              const SizedBox(
-                height: 50,
-              ),
+              const SizedBox(height: 50),
               InputFieldWidget(
                   labelText: "Email",
+                  labelStyle: TextStyle(color: Colors.blueGrey[600]),
+                  inputStyle: TextStyle(color: Colors.blueGrey[800]),
                   onChanged: (value) {
                     signUpState.signupData.email = value;
                   }),
-              const SizedBox(
-                height: 50,
-              ),
+              const SizedBox(height: 50),
               InputFieldWidget(
                   labelText: "Password",
+                  labelStyle: TextStyle(color: Colors.blueGrey[600]),
+                  inputStyle: TextStyle(color: Colors.blueGrey[800]),
                   onChanged: (value) {
                     signUpState.signupData.password = value;
                   }),
-              const SizedBox(
-                height: 50,
-              ),
-              InputFieldWidget(
-                  labelText: "First Name",
-                  onChanged: (value) {
-                    signUpState.signupData.firstName = value;
-                  }),
-              const SizedBox(
-                height: 50,
-              ),
-              InputFieldWidget(
-                  labelText: "Last Name",
-                  onChanged: (value) {
-                    signUpState.signupData.lastName = value;
-                  }),
-              const SizedBox(
-                height: 50,
-              ),
+              const SizedBox(height: 50),
               TextButton(
+                style:
+                    TextButton.styleFrom(backgroundColor: Colors.blueGrey[800]),
                 onPressed: () =>
                     ref.read(signupControllerProvider.notifier).signup(),
-                child: const Text('Register'),
+                child: Text('Register', style: TextStyle(color: Colors.white)),
               ),
             ],
           ),
